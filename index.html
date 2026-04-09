@@ -46,7 +46,7 @@
 
         /* 🔥 BIGGER & GLOWING DOWNLOAD BUTTON */
         .download-btn {
-            padding: 18px 45px; /* Size bada kiya */
+            padding: 18px 45px; 
             font-size: 16px; 
             font-weight: 900; 
             font-family: 'Orbitron';
@@ -61,7 +61,7 @@
             text-transform: uppercase;
             letter-spacing: 2px;
             box-shadow: 0 0 20px rgba(255, 0, 255, 0.4);
-            animation: pulse-glow 2s infinite; /* Glow animation */
+            animation: pulse-glow 2s infinite;
         }
         .download-btn:hover { 
             transform: scale(1.08) translateY(-5px); 
@@ -84,18 +84,19 @@
 
         @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
 
-        /* ✨ ABOUT US SECTION */
+        /* ✨ ABOUT US SECTION (Colourful) */
         .about-section {
             padding: 40px 10%; background: rgba(255, 255, 255, 0.01);
             border-top: 1px solid #111; border-bottom: 1px solid #111; text-align: center;
         }
         .about-section h2 { font-family: 'Orbitron'; font-size: 16px; margin-bottom: 15px; color: var(--neon-blue); letter-spacing: 3px; }
         .about-card {
-            max-width: 700px; margin: 0 auto; padding: 20px;
-            background: linear-gradient(135deg, rgba(255,0,255,0.02), rgba(0,242,254,0.02));
-            border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 10px;
+            max-width: 800px; margin: 0 auto; padding: 25px;
+            background: linear-gradient(135deg, rgba(255,0,255,0.05), rgba(0,242,254,0.05));
+            border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px;
         }
-        .about-card p { font-size: 12px; color: #888; line-height: 1.6; margin: 0; }
+        .about-card b { color: var(--neon-pink); font-family: 'Orbitron'; }
+        .about-card p { font-size: 13px; color: #aaa; line-height: 1.8; margin: 0; }
 
         /* 🏆 FAQ Support Section */
         .support-section { padding: 40px 10%; background: #050508; }
@@ -111,10 +112,10 @@
         .faq-content { max-height: 0; overflow: hidden; transition: 0.3s ease-out; background: #000; }
         .faq-content p { padding: 12px 15px; font-size: 11px; color: #555; line-height: 1.6; margin: 0; }
         .faq-item.active .faq-content { max-height: 200px; }
-        .faq-item.active .faq-header { border-left-color: var(--neon-pink); }
+        .faq-item.active .faq-header { border-left-color: var(--neon-pink); background: #0e0e14; }
         .faq-item.active .faq-header h4 { color: #fff; }
 
-        /* ✉️ HELP CENTRE */
+        /* ✉️ HELP CENTRE - CIRCULAR ICONS */
         .help-centre { padding: 50px 10%; text-align: center; border-top: 1px solid #111; background: #020205; }
         .help-centre h3 { font-family: 'Orbitron'; font-size: 12px; margin-bottom: 25px; color: #444; letter-spacing: 2px; }
         
@@ -138,6 +139,7 @@
             .hero-image { order: -1; margin-bottom: 30px; }
             .hero-text h1 { font-size: 26px; }
             .hero-text { text-align: center; }
+            .download-btn { padding: 15px 35px; font-size: 14px; }
         }
     </style>
 </head>
@@ -152,7 +154,9 @@
         <div class="hero-text">
             <h1>ELITE POWER <br>ONLY ON RARE</h1>
             <p>Experience the ultimate Free Fire ecosystem. Join professional tournaments, track your stats, and build your gaming legacy.</p>
-            <a href="#" class="download-btn"><i class="fab fa-android"></i> Download APK</a>
+            <a href="https://github.com/haraprasads736-crypto/rare-gaming-website/releases/download/v1.0/base.apk" class="download-btn" download>
+                <i class="fab fa-android"></i> Download APK
+            </a>
         </div>
         <div class="hero-image">
             <img src="1000024559.webp" alt="Free Fire MAX Elite">
@@ -163,7 +167,9 @@
         <h2>ABOUT US</h2>
         <div class="about-card">
             <p>
-                <b>RARE GAMING</b> is an ultimate Esports platform where users participate in daily matches for their favorite games and earn rewards for their gaming skills.
+                <b>RARE GAMING</b> is an ultimate <b>ESPORTS PLATFORM APP</b>. 
+                We offer a premier Esports tournament platform where users can participate in daily matches for their favorite games and earn rewards for their gaming skills. 
+                Our platform provides a unique environment where every gamer can survive and dominate. 
             </p>
         </div>
     </section>
